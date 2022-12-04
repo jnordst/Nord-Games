@@ -287,7 +287,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
     color: #f5f6fa;
 }
 
@@ -337,6 +337,8 @@ footer h4 {
     transition: 0.3s;
 }
 
+/* Media ---------------------------------------------------- */
+/* Tablet -------------------------- */
 @media  (max-width: 900px) {
     header {
         justify-content: center;
@@ -359,21 +361,53 @@ footer h4 {
         scale: 1.5;
     }
 
+    section {
+        padding: 40px;
+    }
+
     #sales,
     #games,
-    #consoles
-    {
+    #consoles {
         width: 100%;
     }
 
+    #sales button,
+    #games button {
+        scale: 1.5;
+        margin-top: 60px;
+    }
+
+    .sales-container .product img {
+        width: 600px;
+    }
+
+    .games-container .product img {
+        width: 300px;
+    }
+
     #footer-2 {
-        width: 80%;
+        flex-direction: column;
     }
 }
 
-@media (max-width: 400px) {
+/* Phone --------------------------- */
+@media (max-width: 500px) {
+    header .logo h1 {
+        display:contents
+    }
+
+    #navbar ul li {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
     #navbar {
-        display: none;
+        margin: 1px;
+        padding: 1px;
+        gap: 1px;
     }
 
     #banner {
@@ -387,8 +421,13 @@ footer h4 {
         scale: 1;
     }
 
-    .product img {
-        width: 200px;
+    section {
+        padding: 20px;
+    }
+
+    .sales-container .product img,
+    .games-container .product img {
+        width: 300px;
     }
 
 
