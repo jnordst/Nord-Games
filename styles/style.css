@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+html {
+    background-color: #f5f6fa;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 36px;
+    color: #f5f6fa;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #f5f6fa;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 64px;
+    color: #f5f6fa;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 54px;
+    color:  #f5f6fa;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 54px;
+    margin: 15px 0 20px 0;
+    color: #495055
+}
+
+section {
+    padding: 40px 80px;
+}
+
+body {
+    width: 100%;
+}
+
+button {
+    background: #0080ff;
+    color: white;
+    border: 1px solid transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: #2381df;
+    font-family: 'Open Sans', sans serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover {
+    color: #ebebeb;
+    background: #17599b;
+    transition: .25s;
+}
+
+/* Header ----------------------------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #2f3640;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo a, h2 {
+    font-size: 36px;
+    color: #f5f6fa;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar ul li a {
+    font-size: 18px;
+    font-weight: 800;
+    color: #487eb0;
+    transition: 0.3s ease;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active,
+#navbar ul li:nth-child(5) a {
+    color: #dcdde1;
+}
+
+/* Home ------------------------------------------------------------------------ */
+/* Banner ----------------------------------------------------- */
+#banner {
+    background-image: url("/images/banner_cyberpunk.jpg");
+    height: 600px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    display: flex;
+}
+
+#banner button {
+    position: relative;
+    left: 70px;
+    top: 420px;
+}
+
+/* Main ----------------------------------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #242931, #404758, #242931);
+    width: 100%;
+}
+
+/* Sales --------------------------- */
+#sales,
+#games,
+#consoles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.sales-container,
+.games-container,
+.consoles-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px transparent;
+    border-radius: 5px;
+    background-color: #f5f6fa;
+    font-weight: bold;
+}
+
+.product:hover,
+.console img:hover {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.product-image {
+    position: relative;
+}
+
+.sale-tag {
+    position: absolute;
+    top: 5px;
+    color: #f5f6fa;
+    padding: 0 20px;
+    border-radius: 0 5px 5px 0;
+    background-color: #307527;
+}
+
+.product img {
+    width: 400px;
+}
+
+.product p {
+    padding: 0;
+    margin: 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dcdde1;
+    padding: 0 25px;
+    color: #353b48
+}
+
+.available-platforms {
+    display: flex;
+    gap: 8px;
+}
+
+/* Consoles --------------------------- */
+.console {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.console img {
+    height: 250px;
+    width: 250px;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action Banner ----------- */
+#call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #2f3640;
+}
+
+.call-to-action-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 20px;
+}
+
+#call-to-action h2, 
+#call-to-action i {
+    font-size: 80px;
+}
+
+#call-to-action h4 {
+    color: #487eb0;
+}
+
+/* Games --------------------------- */
+.games-container .product img {
+    width: 300px;
+}
+
+/* Footer -------------------------- */
+footer {
+    background-color: #2f3640;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #f5f6fa;
+}
+
+footer p {
+    color: #f5f6fa;
+    line-height: 12px;
+}
+
+footer h4 {
+    font-size: 24px;
+}
+
+#footer-2 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:32px;
+}
+
+#social-media a {
+    color: #f5f6fa;
+}
+
+#social-media a:nth-child(1):hover {
+    color: #1877f2;
+    transition: 0.3s;
+}
+
+#social-media a:nth-child(2):hover {
+    color: #1da1f2;
+    transition: 0.3s;
+}
+
+#social-media a:nth-child(3):hover {
+    color: #c32aa3;
+    transition: 0.3s;
+}
+
+#social-media a:nth-child(4):hover {
+    color: #ff0000;
+    transition: 0.3s;
+}
+
+@media  (max-width: 900px) {
+    header {
+        justify-content: center;
+    }
+
+    header .logo h1 {
+        display: none;
+    }
+
+    #banner {
+        background-position: top 25% right 30%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner button {
+        align-self: auto;
+        top: 200px;
+        left: auto;
+        scale: 1.5;
+    }
+
+    #sales,
+    #games,
+    #consoles
+    {
+        width: 100%;
+    }
+
+    #footer-2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    #navbar {
+        display: none;
+    }
+
+    #banner {
+        height: 400px;
+        background-position: top 25% right 16%;
+    }
+
+    #banner button {
+        align-self: auto;
+        top: 120px;
+        scale: 1;
+    }
+
+    .product img {
+        width: 200px;
+    }
+
+
+    .console img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .call-to-action-container {
+        text-align: center;
+        gap: none;
+        width: 100%;
+    }
+
+    #call-to-action h2, 
+    #call-to-action i
+    {
+        font-size: 42px;
+    }
+
+    #call-to-action h4
+    {
+        font-size: 18px;
+    }
+
+    #footer-2, #contact-us, #follow-us {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
