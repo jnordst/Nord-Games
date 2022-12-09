@@ -131,23 +131,6 @@ header {
     color: #dcdde1;
 }
 
-/* Home ------------------------------------------------------------------------ */
-/* Banner ----------------------------------------------------- */
-#banner {
-    background-image: url("/images/banner_cyberpunk.jpg");
-    height: 600px;
-    width: 100%;
-    background-position: top 25% right 0;
-    background-size: cover;
-    display: flex;
-}
-
-#banner button {
-    position: relative;
-    left: 70px;
-    top: 420px;
-}
-
 /* Main ----------------------------------------------------- */
 main {
     display: flex;
@@ -156,127 +139,6 @@ main {
     justify-content: center;
     background-image: linear-gradient(180deg, #242931, #404758, #242931);
     width: 100%;
-}
-
-/* Sales --------------------------- */
-#sales,
-#games,
-#consoles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-}
-
-.sales-container,
-.games-container,
-.consoles-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 20px;
-}
-
-.product {
-    text-align: center;
-    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.3);
-    border: 1px transparent;
-    border-radius: 5px;
-    background-color: #f5f6fa;
-    font-weight: bold;
-}
-
-.product:hover,
-.console img:hover {
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-}
-
-.product-image {
-    position: relative;
-}
-
-.sale-tag {
-    position: absolute;
-    top: 5px;
-    color: #f5f6fa;
-    padding: 0 20px;
-    border-radius: 0 5px 5px 0;
-    background-color: #307527;
-}
-
-.product img {
-    width: 400px;
-}
-
-.product p {
-    padding: 0;
-    margin: 0;
-}
-
-.product-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #dcdde1;
-    padding: 0 25px;
-    color: #353b48
-}
-
-.available-platforms {
-    display: flex;
-    gap: 8px;
-}
-
-/* Consoles --------------------------- */
-.console {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.console img {
-    height: 250px;
-    width: 250px;
-    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Call to Action Banner ----------- */
-#call-to-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
-    background-color: #2f3640;
-}
-
-.call-to-action-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 60%;
-    gap: 20px;
-}
-
-#call-to-action h2, 
-#call-to-action i {
-    font-size: 80px;
-}
-
-#call-to-action h4 {
-    color: #487eb0;
-}
-
-/* Games --------------------------- */
-.games-container .product img {
-    width: 300px;
 }
 
 /* Footer -------------------------- */
@@ -337,8 +199,6 @@ footer h4 {
     transition: 0.3s;
 }
 
-/* Media ---------------------------------------------------- */
-/* Tablet -------------------------- */
 @media  (max-width: 900px) {
     header {
         justify-content: center;
@@ -348,50 +208,12 @@ footer h4 {
         display: none;
     }
 
-    #banner {
-        background-position: top 25% right 30%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #banner button {
-        align-self: auto;
-        top: 200px;
-        left: auto;
-        scale: 1.5;
-    }
-
-    section {
-        padding: 40px;
-    }
-
-    #sales,
-    #games,
-    #consoles {
-        width: 100%;
-    }
-
-    #sales button,
-    #games button {
-        scale: 1.5;
-        margin-top: 60px;
-    }
-
-    .sales-container .product img {
-        width: 600px;
-    }
-
-    .games-container .product img {
-        width: 300px;
-    }
-
     #footer-2 {
         flex-direction: column;
         width: 100%;
     }
 }
 
-/* Phone --------------------------- */
 @media (max-width: 500px) {
     header .logo h1 {
         display:contents
@@ -411,230 +233,10 @@ footer h4 {
         gap: 1px;
     }
 
-    #banner {
-        height: 400px;
-        background-position: top 25% right 16%;
-    }
-
-    #banner button {
-        align-self: auto;
-        top: 120px;
-        scale: 1;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    .sales-container .product img,
-    .games-container .product img {
-        width: 300px;
-    }
-
-
-    .console img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .call-to-action-container {
-        text-align: center;
-        gap: none;
-        width: 100%;
-    }
-
-    #call-to-action h2, 
-    #call-to-action i
-    {
-        font-size: 42px;
-    }
-
-    #call-to-action h4
-    {
-        font-size: 18px;
-    }
-
     #footer-2, #contact-us, #follow-us {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
-    }
-}
-
-/* Games ----------------------------------------------------------------------- */
-#games-banner,
-#sales-banner,
-#about-banner {
-    background-image: url(/images/sigmund-YUuSAJkS3U4-unsplash.jpg);
-    height: 200px;
-    width: 100%;
-    background-position: top 50% right 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-}
-
-#games-banner {
-    background-image: url(/images/josh-durham-4rn4X_QnGV4-unsplash.jpg);
-    background-position: top 25% right 0;
-}
-
-#games-banner h2,
-#games-banner i,
-#sales-banner h2,
-#sales-banner i,
-#about-banner h2,
-#about-banner i
-{
-    font-size: 64px;
-    color:  #f5f6fa;
-    text-shadow: black 1px 2px;
-}
-
-#pages {
-    text-align: center;
-}
-
-#pages a {
-    color: #f5f6fa;
-    background-color: #0080ff;
-    padding: 15px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-/* Sales ---------------------------------------------------------------------- */
-#sales-banner {
-    background-image: url(/images/tamanna-rumee-eD1RNYzzUxc-unsplash.jpg);
-    background-position: top 50% right 0;
-}
-
-
-/* About ---------------------------------------------------------------------- */
-#about-banner {
-    background-image: url(/images/sigmund-YUuSAJkS3U4-unsplash.jpg);
-    background-position: top 50% right 0;
-}
-
-
-/* Product --------------------------------------------------------------------- */
-#main-product {
-    display: flex;
-    margin-top: 20px;
-    text-align: center;
-}
-
-#main-product .main-product-image {
-    width: 40%;
-    margin: 20px;
-}
-
-#main-product .main-product-image img {
-    width: 400px;
-}
-
-#main-product .main-product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: top;
-    width: 50%;
-    margin: 20px;
-}
-
-#main-product .main-product-details select {
-    display: block;
-    padding: 5px 10px;
-    margin: 10px 0 10px 0;
-}
-
-#main-product .main-product-details button {
-    margin: 10px 0 10px 0;
-}
-
-#main-product .main-product-details h2 {
-    color: #f5f6fa;
-    font-size: 32px;
-    line-height: 36px;
-}
-
-#main-product .main-product-details span {
-    color: #7f8fa6;
-    margin: 10px 0 10px 0;
-} 
-
-#main-product .main-product-details h3 {
-    color: #dcdde1;
-    font-size: 42px;
-}
-
-#main-product .main-product-details h4 {
-    font-size: 32px;
-    margin: 10px 0 10px 0;
-}
-
-#main-product .main-product-details p {
-    color: #dcdde1;
-    text-align: left;
-    line-height: 24px;
-    margin: 10px 0 10px 0;
-}
-
-.featured-games .games-container {
-    width: 100%;
-    flex-basis: 24%;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 60px;
-}
-
-.featured-games h2 {
-    font-size: 32px;
-    align-self: flex-start;
-}
-
-@media (max-width: 900px) {
-    #main-product .main-product-image img {
-        width: 300px;
-    }
-
-    .featured-games .games-container {
-        width: 100%;
-        flex-basis: 24%;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .featured-games h2 {
-        font-size: 32px;
-        align-self: center;
-    }
-}
-
-@media (max-width: 500px) {
-    #main-product {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #main-product .main-product-image {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    #main-product .main-product-details {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #main-product .main-product-details p {
         text-align: center;
     }
 }

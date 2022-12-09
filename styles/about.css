@@ -1,0 +1,26 @@
+#about-banner {
+    background-image: url(/images/sigmund-YUuSAJkS3U4-unsplash.jpg);
+    height: 200px;
+    width: 100%;
+    background-position: top 50% right 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#about-us {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about-us p {
+    color: #fff;
+    line-height: 20px;
+}

@@ -5,22 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/productcard.css">
+        <link rel="stylesheet" href="./styles/product.css">
         <script src="https://kit.fontawesome.com/a0c760a34f.js" crossorigin="anonymous"></script>
-        <script src="./js/main.js"></script>
+        <script src="./js/products.js"></script>
+        <script src="./js/product.js" defer></script>
         <title>Product</title>
     </head>
 
     <body>
         <header>
             <div class="logo">
-                <a href="#"><i class="fa-solid fa-gamepad"></i></a>
-                <a href=""><h1>nordGAMES</h1></a>
+                <a href="index.html"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="index.html"><h1>nordGAMES</h1></a>
             </div>
             
             <nav id="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Games</a></li>
+                    <li><a href="games.html">Games</a></li>
                     <li><a href="sales.html">Sales</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -31,13 +34,13 @@
         <main>
             <section id="main-product">
                 <div class="main-product-image">
-                    <img src="images/octopath_traveller_vertical.jpg" width="100%"" alt="">
+                    <img src="./images/filler_cover.png" alt="">
                 </div>
 
                 <div class="main-product-details">
-                    <h2>Octopath Traveller</h4>
-                    <span>Square Enix</span>
-                    <h3>$79.99</h2>
+                    <h2 id="title"></h4>
+                    <span></span>
+                    <h3></h2>
                     <select>
                         <option>Select Platform</option>
                         <option>Nintedo Switch</option>
@@ -48,82 +51,71 @@
                     </select>
                     <button >Add to Cart</button>
                     <h4>Product Details</h4>
-                    <p>Square Enix has brought a new world to life through a mix of CG, pixel art, and "HD-2D" visuals. Embark on a vast new role-playing adventure as one of eight travelers, all with their own origins, paths, and goals. Where to begin? Who to team up with? Where to go next? Only you can decide.</p>
+                    <p></p>
                 </div>
             </section>
 
-            <section id="games" class="featured-games">
+            <section id="featured-games">
                 <h2>You Might Also Like</h2>
-                <div class="games-container">
-                    <div class="product" >
+                <div id="fg-container">
+
+                    <div class="product">
                         <div class="product-image">
-                            <img src="./images/Octopath-traveler-cover.webp" alt="">
-                            <p class="sale-tag">-34%</p>
+                            <img class="product-img" src="" alt="">
+                            <p class="sale-tag"></p>
                         </div>
-                        <p class="product-title">Octopath Traveler</p>
+                        <p class="product-title"></p>
                         <div class="product-info">
-                            <div class="available-platforms">
-                                <i class="fa-brands fa-steam"></i>
-                                <i class="fa-solid fa-n"></i>
-                            </div>
-                            <p class="product-price">$52.79</p>
+                            <div class="available-platforms"></div>
+                            <p class="product-price"></p>
                         </div>
                     </div>
 
                     <div class="product">
                         <div class="product-image">
-                            <img src="./images/Octopath-traveler-cover.webp" alt="">
-                            <p class="sale-tag">-34%</p>
+                            <img class="product-img" src="" alt="">
+                            <p class="sale-tag"></p>
                         </div>
-                        <p class="product-title">Octopath Traveler</p>
+                        <p class="product-title"></p>
                         <div class="product-info">
-                            <div class="available-platforms">
-                                <i class="fa-brands fa-steam"></i>
-                                <i class="fa-solid fa-n"></i>
-                            </div>
-                            <p class="product-price">$52.79</p>
+                            <div class="available-platforms"></div>
+                            <p class="product-price"></p>
                         </div>
                     </div>
 
                     <div class="product">
                         <div class="product-image">
-                            <img src="./images/Octopath-traveler-cover.webp" alt="">
-                            <p class="sale-tag">-34%</p>
+                            <img class="product-img" src="" alt="">
+                            <p class="sale-tag"></p>
                         </div>
-                        <p class="product-title">Octopath Traveler</p>
+                        <p class="product-title"></p>
                         <div class="product-info">
-                            <div class="available-platforms">
-                                <i class="fa-brands fa-steam"></i>
-                                <i class="fa-solid fa-n"></i>
-                            </div>
-                            <p class="product-price">$52.79</p>
+                            <div class="available-platforms"></div>
+                            <p class="product-price"></p>
                         </div>
                     </div>
 
                     <div class="product">
                         <div class="product-image">
-                            <img src="./images/Octopath-traveler-cover.webp" alt="">
-                            <p class="sale-tag">-34%</p>
+                            <img class="product-img" src="" alt="">
+                            <p class="sale-tag"></p>
                         </div>
-                        <p class="product-title">Octopath Traveler</p>
+                        <p class="product-title"></p>
                         <div class="product-info">
-                            <div class="available-platforms">
-                                <i class="fa-brands fa-steam"></i>
-                                <i class="fa-solid fa-n"></i>
-                            </div>
-                            <p class="product-price">$52.79</p>
+                            <div class="available-platforms"></div>
+                            <p class="product-price"></p>
                         </div>
                     </div>
-            
 
-
+                </div>
+            </div>
         </main>
 
 
         <footer>
             <div class="logo">
-                <a href="#"><i class="fa-solid fa-gamepad"></i></a>
-                <a href=""><h2>nordGAMES</h2></a>
+                <a href="index.html"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="index.html"><h2>nordGAMES</h2></a>
             </div>
 
             <div id="footer-2">

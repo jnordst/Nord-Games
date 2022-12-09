@@ -1,0 +1,407 @@
+/* Home ------------------------------------------------------------------------ */
+/* Banner ----------------------------------------------------- */
+#banner {
+    background-image: url("/images/banner_cyberpunk.jpg");
+    height: 600px;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    display: flex;
+}
+
+#banner button {
+    position: relative;
+    left: 70px;
+    top: 420px;
+}
+
+/* Sales --------------------------- */
+#sales,
+#games,
+#consoles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#sales-container,
+#games-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#sales-container{
+    grid-template-columns: repeat(3, 400px);
+}
+
+#sales-container .product img {
+    width: 400px;
+    height: 225px;
+}
+
+/* Games --------------------------- */
+#games-container{
+    grid-template-columns: repeat(4, 300px);
+}
+
+#games-container .product img {
+    width: 300px;
+    height: 169px;
+}
+
+/* Consoles --------------------------- */
+.consoles-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(5, 200px);
+}
+
+.console {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.console img {
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.console h3 {
+    text-align: center;
+}
+
+/* Call to Action Banner ----------- */
+#call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #2f3640;
+}
+
+.call-to-action-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 20px;
+}
+
+#call-to-action h2, 
+#call-to-action i {
+    font-size: 80px;
+}
+
+#call-to-action h4 {
+    color: #487eb0;
+}
+
+/* Media ---------------------------------------------------- */
+@media (width <= 1700px){
+    #games-container  {
+        grid-template-columns: repeat(4, 300px);
+    }
+
+    #games-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (width <= 1300px){
+    #sales-container  {
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    #sales-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+
+    #games-container  {
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+
+@media (width <= 1100px){
+    .consoles-container  {
+        grid-template-columns: repeat(5, 150px);
+    }
+
+    .console {
+        width: 150px;
+    }
+
+    .console h3{
+        font-size: 16px;
+    }
+
+    .console img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+@media (width <= 1000px){
+    #sales-container  {
+        grid-template-columns: repeat(3, 250px);
+    }
+
+    #sales-container .product img {
+        width: 250px;
+        height: 141px;
+    }
+
+    #games-container  {
+        grid-template-columns: repeat(2, 400px);
+    }
+
+    #games-container .product img {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (width <= 850px){
+    #banner {
+        background-position: top 25% right 30%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner button {
+        align-self: auto;
+        top: 200px;
+        left: auto;
+        scale: 1.5;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    #sales button,
+    #games button {
+        scale: 1.5;
+        margin-top: 60px;
+    }
+
+    #sales-container  {
+        grid-template-columns: repeat(1, 500px);
+    }
+
+    #sales-container .product img {
+        width: 500px;
+        height: 281px;
+    }
+
+    #games-container  {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    #games-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+
+    .consoles-container  {
+        grid-template-columns: repeat(5, 125px);
+        gap: 10px;
+        margin-bottom: 60;
+    }
+
+    .console {
+        width: 125px;
+    }
+
+    .console img {
+        height: 125px;
+        width: 125px;
+    }
+
+    .consoles-container h3 {
+        display: none;
+    }
+}
+
+@media (width <= 720px) {
+    .consoles-container  {
+        grid-template-columns: repeat(5, 80px);
+    }
+
+    .console {
+        width: 80px;
+    }
+
+    .console img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .call-to-action-container {
+        text-align: center;
+        gap: none;
+        width: 100%;
+    }
+}
+
+
+@media (width <= 660px){
+    #call-to-action h2, 
+    #call-to-action i
+    {
+        font-size: 52px;
+    }
+
+    #call-to-action h4
+    {
+        font-size: 24px;
+    }
+
+    #games-container  {
+        grid-template-columns: repeat(1, 500px);
+    }
+
+    #games-container .product img {
+        width: 500px;
+        height: 281px;
+    }
+}
+
+@media (width <= 550px){
+    #sales-container  {
+        grid-template-columns: repeat(1, 400px);
+    }
+
+    #sales-container .product img {
+        width: 400px;
+        height: 225px;
+    }
+
+    #games-container  {
+        grid-template-columns: repeat(1, 400px);
+    }
+
+    #games-container .product img {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (width <= 480px){
+    #banner {
+        height: 400px;
+        background-position: top 25% right 16%;
+    }
+
+    #banner button {
+        align-self: auto;
+        top: 120px;
+        scale: 1;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .consoles-container  {
+        grid-template-columns: repeat(5, 50px);
+    }
+
+    .console {
+        width: 50px;
+    }
+
+    .console img {
+        height: 50px;
+        width: 50px;
+    }
+
+    #call-to-action h2, 
+    #call-to-action i
+    {
+        font-size: 42px;
+    }
+
+    #call-to-action h4
+    {
+        font-size: 18px;
+    }
+}
+
+@media (width <= 430px){
+    #sales-container  {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    #sales-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+
+    #games-container  {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    #games-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (width <= 350px){
+    #sales-container  {
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    #sales-container .product img {
+        width: 250px;
+        height: 141px;
+    }
+
+    #games-container  {
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    #games-container .product img {
+        width: 250px;
+        height: 141px;
+    }
+
+    #call-to-action {
+        padding: 0px;
+    }
+}
+
+/* Sales ---------------------------------------------------------------------- */
+#sales-banner {
+    background-image: url(/images/tamanna-rumee-eD1RNYzzUxc-unsplash.jpg);
+    background-position: top 50% right 0;
+}
+
+
+/* About ---------------------------------------------------------------------- */
+#about-banner {
+    background-image: url(/images/sigmund-YUuSAJkS3U4-unsplash.jpg);
+    background-position: top 50% right 0;
+}

@@ -1,0 +1,135 @@
+/* Games --------------------------- */
+#games-banner,
+#sales-banner {
+    height: 200px;
+    width: 100%;
+    background-position: top 50% right 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#games-banner {
+    background-image: url(/images/josh-durham-4rn4X_QnGV4-unsplash.jpg);
+    background-position: top 25% right 0;
+}
+
+#sales-banner {
+    background-image: url(/images/tamanna-rumee-eD1RNYzzUxc-unsplash.jpg);
+    background-position: top 25% right 0;
+}
+
+#games-banner h2,
+#games-banner i
+{
+    font-size: 64px;
+    color:  #f5f6fa;
+    text-shadow: black 1px 2px;
+}
+
+#games {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#games-container  {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 400px);
+}
+
+#games-container .product img {
+    width: 400px;
+    height: 225px;
+}
+
+@media (width <= 1700px){
+    #games-container  {
+        grid-template-columns: repeat(4, 300px);
+    }
+
+    #games-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (width <= 1300px){
+    #games-container  {
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+
+@media (width <= 1000px){
+    #games-container  {
+        grid-template-columns: repeat(2, 400px);
+    }
+
+    #games-container .product img {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (width <= 850px){
+    #games-container  {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    #games-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (width <= 660px){
+    #games-container  {
+        grid-template-columns: repeat(1, 500px);
+    }
+
+    #games-container .product img {
+        width: 500px;
+        height: 281px;
+    }
+}
+
+@media (width <= 550px){
+    #games-container  {
+        grid-template-columns: repeat(1, 400px);
+    }
+
+    #games-container .product img {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (width <= 430px){
+    #games-container  {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    #games-container .product img {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (width <= 350px){
+    #games-container  {
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    #games-container .product img {
+        width: 250px;
+        height: 141px;
+    }
+}
