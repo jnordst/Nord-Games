@@ -24,3 +24,15 @@
     color: #fff;
     line-height: 20px;
 }
+
+@media (width < 1300px) {
+    #about-us {
+        width: 80%;
+    }
+}
+
+@media (width < 500px) {
+    #about-us {
+        width: 100%;
+    }
+}
