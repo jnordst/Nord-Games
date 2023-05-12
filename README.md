@@ -4,7 +4,7 @@
 
 ## My FIRST Website
 - Ecommerce website modeled after websites like Steam or Humble Bundle
-- Utilizes HTML, CSS and is powered by Javascript 
+- Utilizes HTML, CSS and powered by Javascript 
 - Fully responsive
 
 Jacob Nordstrom | December 2022
